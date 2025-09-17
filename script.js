@@ -1,12 +1,12 @@
 // complete the given function
 
 function palindrome(str){
-let arr = str.split("");
+	 let cleaned = str.toLowerCase();
 	let left = 0;
-	let right =  arr.length-1;
+	   let right = cleaned.length - 1;
 
 	while(left <= right){
-		if(arr[left] != arr[right]){
+		if(cleaned[left] !== cleaned[right])){
 			return false;
 		}
 		left++;
